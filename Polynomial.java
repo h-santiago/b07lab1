@@ -71,7 +71,6 @@ public class Polynomial {
                 double coeff = this.coefficients[i] * other.coefficients[j];
                 int exp = this.exponents[i] + other.exponents[j];
 
-                // Check if we already have this exponent
                 boolean found = false;
                 for (int k = 0; k < count; k++) {
                     if (tempExps[k] == exp) {
